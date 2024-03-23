@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+  body{
+    background-color:rgb(54, 131, 103);
+  }
+div.gallery {
+  margin: 120px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height:200px;
+  float: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+    <form action="payment.html" method="POST">
+<div class="gallery">
+  <a target="_blank" href="mango.jpg">
+    <img src="mango.jpg" alt="Mango" width="600" height="400">
+  </a>
+  <div class="desc">Mango <br>Details </div>
+  <p>Cost per kg = 200/-</p> 
+    <button type="submit">Buy</button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="jackfruit.jpg">
+    <img src="jackfruit.jpg" alt="Jackfruit" width="600" height="800">
+  </a>
+  <div class="desc">Jackfruit <br>Details</div>
+  <p>Cost per fruit =150/-</p>
+  <button type="submit">Buy</button>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="orange.jpg">
+    <img src="orange.jpg" alt="orange" width="600" height="400">
+  </a>
+  <div class="desc">Orange <br>Details <br></div>
+  <p>Cost per kg = 80/-</p>
+  <button type="submit">Buy</button>
+</div>
+
+</body>
+</html>

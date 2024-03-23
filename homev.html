@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+    <meta name="Generator" content="EditPlus">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function stickyMenu(){
+            var sticky=document.getElementById("sticky");
+            if(window.pageYOffset> 20){
+                sticky.classList.add("sticky");
+                sticky.classList.remove("menu-ul");
+            }
+            else{
+                sticky.classList.remove("sticky");
+            }
+        }
+
+        window.onscroll = function(){
+            stickyMenu();
+        }
+    </script>
+</head>
+<style>
+   *
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(https://www.thestatesman.com/wp-content/uploads/2018/06/saplings.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-kit-background-size: cover;
+    -o-kit-background-size: cover;
+    font-family: sans-serif;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out;
+}
+.menu-bar
+{
+    text-align: right;
+    font-size:x-large;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.menu-bar ul li
+{
+    width: 180px;
+    margin: 1.5px;
+    padding: 10px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: rgba(26, 28, 29, 0.904);
+    display: block;
+}
+.menu-bar ul li a:hover{
+    background-color: rgb(228, 241, 241);
+}
+.menu-bar1
+{
+    background: none;
+    
+}
+.menu-bar1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar1 ul li{
+    display: none;
+}
+.menu-bar ul li:hover .menu-bar1 ul li
+{
+    display: block;
+}
+    a:hover{
+        border-bottom: 1px solid whote;
+    }
+
+    
+    .sticky{
+        background: #0f4c75;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .sticky ul{
+        padding: 0;
+        margin: 10px;
+    }
+    .page-title{
+        text-align: center;
+        font-size: 50px;
+        padding: 200px;
+        color:white;
+        letter-spacing: 10px;
+        text-shadow: 0 0 5px #0f4c75;
+    }
+    
+    .description, .title{
+        font-variant: small-caps;
+        font-size: 30px;
+        margin: 20px;
+    }
+    
+    .page-blocks{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .flex-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: bottom;
+        overflow: hidden;
+    }
+    
+    .Information-item{
+        background: #0f4c75;
+        color: white;
+        width: 20%;
+        padding: 40px;
+        margin:20px;
+    }
+    
+    .block-label{
+        font-variant: small-caps;
+        font-size: 20p;
+        margin-bottom: 20px;
+        letter-spacing: 5px;
+    }
+    
+    .block-description {
+        text-align: justify;
+    }
+</style>
+<body>
+    <h1>Horticulture Management System</h1>
+    <hr>
+    <div class="top-background">
+        <div class="menu" id="sticky">
+    <div class="menu-bar">
+    <ul>
+        <li><a href="./home.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="aboutus.html"><i class="fa fa-user"></i> About Us</a></li>
+        <li><a href="reg.html"><i class="fa fa-user"></i> Register</a></li>
+        <li><a href=""><i class="fa fa-users"></i> login</a>
+            <div class="menu-bar1">
+                <ul>
+                    <li><a href="Index.html">Admin</a></li>
+                    <li><a href="./reg.html">customer</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="./contactus.html"><i class="fa fa-phone"></i> contact</a></li> 
+    </ul> 
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div> 
+</div>
+
+ <!--Information block-->
+ <section>
+ <div class="page-blocks">
+    <div class="title">
+        Information
+    </div>
+    <div class="flex-block">
+        <div class="Information-item">
+            <div class="block-label">
+                Our Projects
+            </div>
+            <div class="block-description">Our projects with modern interior designing tools that help us provide you with innovative solutions and unique Interior decor plans that stand out.</div>
+        </div>
+        <div class="Information-item">
+            <div class="block-label">
+                Our Designs
+            </div>
+            <div class="block-description">Our projects with modern interior designing tools that help us provide you with innovative solutions and unique Interior decor plans that stand out.</div>
+        </div>
+        <div class="Information-item">
+            <div class="block-label">
+                Our Servics
+            </div>
+            <div class="block-description">Our projects with modern interior designing tools that help us provide you with innovative solutions and unique Interior decor plans that stand out.</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

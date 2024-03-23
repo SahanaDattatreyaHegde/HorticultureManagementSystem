@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DBMS PROJECT</title>
+        <meta name="Generator" content="EditPlus">
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        
+      
+    </head>
+<style>
+   body{
+    margin: 0;
+}
+
+.top-background, .Contact-img{
+    background-image: url('img8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu{
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu-ul{
+    padding: 10px;
+}
+
+.menu-ul li{
+    display: inline-block;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+}
+
+a{
+    border-bottom: 1px solid transparent;
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid whote;
+}
+
+.sticky{
+    background: #0f4c75;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky ul{
+    padding: 0;
+    margin: 10px;
+}
+.page-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 200px;
+    color:white;
+    letter-spacing: 10px;
+    text-shadow: 0 0 5px #0f4c75;
+}
+
+.description, .title{
+    font-variant: small-caps;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.page-blocks{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    letter-spacing: 10px;
+    color: #0f4c75;
+}
+.design img{
+    height: 35%;
+    max-width: 95%;
+    margin: 15px;
+}
+
+.more-designs-btn{
+    background:transparent;
+    border:2px solid #0f4c75;
+    color:#0f4c75;
+    font-weight: 300;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.more-designs-btn:hover{
+    background: #0f4c75;
+    color: white;
+    transition: all 0.5s;
+}
+
+.flex-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Contact-flex-item{
+    background: #0f4c75;
+    color: white;
+    height: 450px;
+    width: 45%;
+    padding: 0px;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.Contact-img{
+    background-image: url('imag1.jpg');
+}
+.Contact-text{
+    padding: 200px 20px;
+    font-size: 50px;
+    background: rgba(182, 170, 8, 0.5);
+}
+
+.Contact-form{
+    padding: 20px;
+}
+
+.Contact-form input, textarea{
+    width: 60%;
+    max-width:60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    color: #0f4c75;
+    font-size: 16px;
+}
+
+.Contact-form textarea{
+    height: 100px;
+    max-height: 100px;
+    max-width: 60%;
+    overflow-y: scroll;
+}
+
+.Contact-btn{
+    border: 2px solid blue;
+    background: transparent;
+    color:black;
+    padding: 15px;
+    outline: none;
+}
+
+.Contact-btn:hover{
+    background:black;
+    color: #0f4c75;
+}
+
+
+</style>
+        <!--Contact block-->
+        <form action="customerlogin.php" method="POST">
+        <div class="page-blocks">
+            <div class="title">
+               CUSTOMER LOGIN
+            </div>
+            <div class="flex-block">
+                <div class="Contact-flex-box">
+                    <div class="Contact-img">
+                        <div class="Contact-text">
+                            Make a Contact with us Today!
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="Contact-flex-item">
+                       
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" class="form-control" name="email" /><br>
+
+                      
+                        
+                            <label for="Password">Password</label><br>
+                            <input type="password" id="Password" class="form-control" name="password" /><br>
+                        
+                        <input type="submit" class="btn btn-primary w-100" value="login" name="">
+
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+       
+    </body>
+</html>
+
